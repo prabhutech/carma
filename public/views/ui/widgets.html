@@ -37,14 +37,14 @@
                 <div class="list-justified-container">
                     <ul class="list-justified text-center">
                         <li>
-                            <p class="size-h3">575</p>
-                            <p class="text-muted">Karma </p>
+                            <p class="size-h3">119</p>
+                            <p class="text-muted">Carma over time </p>
                         </li>
-                        <li>
+<!--                         <li>
                             <p class="size-h3">23</p>
                             <p class="text-muted">Sales</p>
                         </li>
-                    </ul>
+ -->                    </ul>
                 </div>
             </section>
 
@@ -60,7 +60,7 @@
                 </span>
                 <div class="box-info">
                     <p class="size-h2">39</p>
-                    <p class="text-muted">Trees Saved</p>
+                    <p class="text-muted">Short Trip Average</p>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                 </span>
                 <div class="box-info">
                     <p class="size-h2">55</p>
-                    <p class="text-muted">Total Carma</p>
+                    <p class="text-muted">Long Trip Average</p>
                 </div>
             </div>
         </div>
@@ -81,88 +81,26 @@
                     <i class="fa fa-check"></i>
                 </span>
                 <div class="box-info">
-                    <p class="size-h2">34</p>
-                    <p class="text-muted">Fuel Effeciency</p>
+                    <p class="size-h2">119</p>
+                    <p class="text-muted">Total Karma</p>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3" ng-mouseover='points=true' ng-mouseleave='points=false'
-        >
+        <div class="col-sm-3">
             <div class="panel mini-box">
-                <span class="box-icon bg-primary">
-                    <i class="fa fa-globe" ng-hide="points"></i>
-                    <i class="fa fa-star" ng-show="points"></i>
-                </span>
+<!--                 <span class="box-icon bg-primary">
+                    <i class="fa fa-globe"></i>
+ --><!--                     <i class="fa fa-star" ng-show="points"></i> -->
+                <!-- </span> -->
                 <div class="box-info" >
-                    <p class="size-h2" ng-hide="points" >63</p>
-                    <p class="text-muted" ng-hide="points" >Carbon Points</p>
-                    <!-- <p class="size-h2" ng-show="points" >63</p> -->
-                    <p class="text-muted size-h2" ng-show="points" ><a  class="text-muted size-h2" href="https://www.hertz.com/rentacar/member/enrollment" target="_blank">Redeem</a></p>
+                      <a class="btn btn-lg btn-primary" href="#">
+                        <i class="fa fa-flag fa-2x pull-left"></i> Get more Carma</a>
                 </div>
             </div>
         </div>
 
     </div>
     <!-- end mini box -->
-
-    <section>
-        <div class="row">
-            <!-- <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Acceleration</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        <canvas  data-gauge-chart
-                                data-data="gaugeChart3.data"
-                                data-options="gaugeChart3.options"
-
-                                ></canvas>
-                    </div>
-                </div>
-            </div> -->
-<div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Easy Pie Chart</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
-                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Easy Pie Chart</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
-                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Easy Pie Chart</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
-                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-    </section>
 
     <div class="row">
         <div class="col-md-12">
@@ -193,6 +131,52 @@
                 </table>
             </div>
             <!-- end List group -->
+
+                <section>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Acceleration</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="acceleration.options" percent="acceleration.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="acceleration.percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Fuel Effeciency</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="fuelEff.options" percent="fuelEff.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="fuelEff.percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Easy Pie Chart</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
         </div>
     </div>
 

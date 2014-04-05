@@ -19,8 +19,8 @@
             function loop() {
                 $scope.$apply(function(){
                     $scope.easypiechart3.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*5);
-                    $scope.easypiechart2.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
-                    $scope.pieChart.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
+                    $scope.fuelEff.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
+                    $scope.acceleration.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
                     $scope.gaugeChart3.data.val = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
                     $scope.currentEvent  = $scope.tripsData[i];
                 });
@@ -35,17 +35,33 @@
                     setTimeout(loop, 1000);  // call myself in 3 seconds time if required
                 }
             };      // above function expression is called immediately to start it off
-            $scope.pieChart = {
+            $scope.acceleration = {
                 percent: 0,
                 options: {
                     animate: {
                         duration: 1e3,
                         enabled: !0
                     },
-                    barColor: "#674E9E",
-                    lineCap: "round",
+                    barColor: "#ff7857",
+                    lineCap: "square",
                     size: 180,
-                    lineWidth: 5
+                    lineWidth: 20,
+                    scaleLength: 0
+                }
+            };
+
+            $scope.fuelEff = {
+                percent: 0,
+                options: {
+                    animate: {
+                        duration: 1e3,
+                        enabled: !0
+                    },
+                    barColor: "#a3c86d",
+                    lineCap: "square",
+                    size: 180,
+                    lineWidth: 20,
+                    scaleLength: 0
                 }
             };
 
@@ -449,7 +465,7 @@
     ]).controller("sparklineCtrl", ["$scope",
         function($scope) {
             return $scope.demoData1 = {
-                data: [3, 1, 2, 2, 4, 6, 4, 5, 2, 4, 5, 3, 4, 6, 4, 7],
+                data: [1, 12, 15, 25, 44, 76, 94, 80,72, 80, 95, 103, 114, 116, 119],
                 options: {
                     type: "line",
                     lineColor: "#fff",
