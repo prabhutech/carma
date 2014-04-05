@@ -1,15 +1,12 @@
 
-<div class="page page-profile">
+<div class="page page-profile" ng-controller="chartCtrl">
 
     <div class="row">
         <div class="col-md-6">
 
             <div class="panel panel-profile">
-                <div class="panel-heading text-center bg-info">
-                    <img alt="" src="images/g1.jpg" class="img-circle img80_80">
-                    <h3>Jone Doe</h3>
-                    <p>Project Manager</p>                    
-                </div>
+                <img alt="" src="images/tree/tree{{currentEvent.treeLevel}}.jpg">      
+
                 <div class="list-justified-container">
                     <ul class="list-justified text-center">
                         <li>
@@ -92,69 +89,6 @@
                 </div>
             </div>
           
-        </div>
-        <div class="col-md-6">
-
-            <div class="panel panel-default">
-                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Profile Info</strong></div>
-                <div class="panel-body">
-                    <div class="media">
-                        <div class="media-body">
-                            <ul class="list-unstyled list-info">
-                                <li>
-                                    <span class="icon glyphicon glyphicon-user"></span>
-                                    <label>User name</label>
-                                    John Doe
-                                </li>
-                                <li>
-                                    <span class="icon glyphicon glyphicon-envelope"></span>
-                                    <label>Email</label>
-                                    john@doe.com
-                                </li>
-                                <li>
-                                    <span class="icon glyphicon glyphicon-home"></span>
-                                    <label>Address</label>
-                                    Street 123, Avenue 45, Country
-                                </li>
-                                <li>
-                                    <span class="icon glyphicon glyphicon-earphone"></span>
-                                    <label>Contact</label>
-                                    (+012) 345 6789
-                                </li>
-                                <li>
-                                    <span class="icon glyphicon glyphicon-flag"></span>
-                                    <label>Nationality</label>
-                                    Australia
-                                </li>
-                                <li>
-                                    <span class="icon glyphicon glyphicon-globe"></span>
-                                    <label>Website</label>
-                                    www.site.com
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <section class="panel panel-default">
-                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Progress</strong></div>
-                <div class="panel-body" data-ng-controller="ProgressDemoCtrl">
-                    <p>Tasks</p>
-                    <progressbar class="progressbar-xs" value="55"></progressbar>
-                    <p>Messages</p>
-                    <progressbar class="progressbar-xs" value="43" type="success"></progressbar>
-                    <p>Notifications</p>
-                    <progressbar class="progressbar-xs" value="68" type="info"></progressbar>
-                    <p>Mails</p>
-                    <progressbar class="progressbar-xs" value="86" type="warning"></progressbar>
-                    <p>Bugs</p>
-                    <progressbar class="progressbar-xs" value="77" type="danger"></progressbar>
-                </div>
-            </section>  
-
-
         </div>
     </div>
 
