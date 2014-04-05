@@ -1,0 +1,21 @@
+#4F8A19
+
+User dashboard:
+- loop the array to go infinite
+- map the mobile data to match user daashboard
+- need to bind the user profile to tree data
+- need to come up the base value for dashboard gaugges (verify)
+- something to fill up for graph on user dashboard
+- change the name & title of the user to something else
+- change the header name of the user too
+
+Hertz dashobard:
+- better icon choices
+- Improve the table data
+- Section title change
+- legend change and x/y coord names for the chart
+
+
+Just before the demo:
+- zoom out the pages to fit the screen
+
