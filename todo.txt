@@ -5,7 +5,7 @@ User dashboard:
 - map the mobile data to match user daashboard 
 - need to bind the user profile to tree data
 - need to come up the base value for dashboard gaugges (verify)
-- something to fill up for graph on user dashboard
+- something to fill up for graph on user dashboard - done 
 - change the name & title of the user to something else
 - change the header name of the user too
 
