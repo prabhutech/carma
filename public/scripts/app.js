@@ -1,9 +1,23 @@
 (function() {
     "use strict";
-    angular.module("app.chart.ctrls", []).controller("chartCtrl", ["$scope",
-        function($scope) {
+    angular.module("app.chart.ctrls", []).controller("chartCtrl", ["$scope", "$http",
+        function($scope, $http) {
+            $scope.currentEvent = 45;
+            var i = 0;
+            $http.get('../public/scripts/data.json').then(function(res){
+                $scope.tripsData = angular.fromJson(res.data);
+                console.log($scope.tripsData);    
+                (function loop() {
+                    $scope.currentEvent = $scope.tripsData[i];
+                    console.log($scope.currentEvent);
+                    if (++i < $scope.tripsData.length) {
+                        setTimeout(loop, 1000);  // call myself in 3 seconds time if required
+                    }
+                })();      // above function expression is called immediately to start it off         
+            });
+
             return $scope.easypiechart = {
-                percent: 65,
+                percent: $scope.currentEvent === undefined ? 0 : $scope.currentEvent.acceleration,
                 options: {
                     animate: {
                         duration: 1e3,
@@ -15,7 +29,7 @@
                     lineWidth: 5
                 }
             }, $scope.easypiechart2 = {
-                percent: 35,
+                percent: $scope.currentEvent === undefined ? 0 : $scope.currentEvent.acceleration,
                 options: {
                     animate: {
                         duration: 1e3,
@@ -27,7 +41,7 @@
                     lineWidth: 10
                 }
             }, $scope.easypiechart3 = {
-                percent: 68,
+                percent: $scope.currentEvent === undefined ? 0 : $scope.currentEvent.acceleration,
                 options: {
                     animate: {
                         duration: 1e3,
@@ -1491,8 +1505,22 @@ function() {
                 return $scope.taskRemainingCount = count
             })
         }
-    ]).controller("DashboardCtrl", ["$scope",
-        function($scope) {
+    ]).controller("DashboardCtrl", ["$scope", "$http", "$timeout",
+        function($scope, $http, MojioService, $timeout) {
+            $scope.Math = window.Math;
+            var i = 0;
+            $http.get('../public/scripts/data.json').then(function(res){
+                $scope.tripsData = angular.fromJson(res.data);
+                console.log($scope.tripsData);    
+                (function loop() {
+                    $scope.currentEvent = $scope.tripsData[i];
+                    console.log($scope.currentEvent);
+                    if (++i < $scope.tripsData.length) {
+                        setTimeout(loop, 1000);  // call myself in 3 seconds time if required
+                    }
+                })();      // above function expression is called immediately to start it off         
+            });
+
             return $scope.comboChartData = [
                 ["Month", "Bolivia", "Ecuador", "Madagascar", "Papua New Guinea", "Rwanda", "Average"],
                 ["2014/05", 165, 938, 522, 998, 450, 614.6],
@@ -1506,7 +1534,7 @@ function() {
                 ["2011", 1170, 460],
                 ["2012", 660, 1120],
                 ["2013", 1030, 540]
-            ]
+            ];
         }
     ])
 }.call(this),

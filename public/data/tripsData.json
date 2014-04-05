@@ -1,0 +1,129 @@
+{
+    "PageSize": 10,
+    "Offset": 0,
+    "TotalRows": 2,
+    "Data": [
+        {
+            "MojioId": "31975502-1d7d-4360-9388-ba7fe2f7939d",
+            "VehicleId": "d0b9dc39-179f-4d70-830d-5fde0f1d4d7b",
+            "StartTime": "2014-04-05T03:28:04.341Z",
+            "LastUpdatedTime": "2014-04-05T03:28:41.033Z",
+            "EndTime": "2014-04-05T03:28:41.033Z",
+            "MaxSpeed": 115.19999999999999,
+            "MaxAcceleration": null,
+            "MaxDeceleration": null,
+            "MaxRPM": null,
+            "FuelLevel": 95.28,
+            "FuelEfficiency": 5.192,
+            "Distance": 52,
+            "MovingTime": null,
+            "IdleTime": null,
+            "StopTime": null,
+            "StartLocation": {
+                "Lat": 48.46612089313567,
+                "Lng": -123.43403594568372,
+                "FromLockedGPS": false,
+                "Dilution": 0,
+                "IsValid": true
+            },
+            "LastKnownLocation": null,
+            "EndLocation": {
+                "Lat": 48.46717734821141,
+                "Lng": -123.43720723874867,
+                "FromLockedGPS": false,
+                "Dilution": 0,
+                "IsValid": true
+            },
+            "StartAddress": {
+                "Address1": "1 Hospital Way",
+                "Address2": null,
+                "City": "Victoria",
+                "State": "BC",
+                "Zip": "V8Z 6R5",
+                "Country": "CA"
+            },
+            "LastKnownAddress": {
+                "Address1": "201-205 Watkiss Way",
+                "Address2": null,
+                "City": "Victoria",
+                "State": "BC",
+                "Zip": "V8Z 1R7",
+                "Country": "CA"
+            },
+            "EndAddress": {
+                "Address1": "201-205 Watkiss Way",
+                "Address2": null,
+                "City": "Victoria",
+                "State": "BC",
+                "Zip": "V8Z 1R7",
+                "Country": "CA"
+            },
+            "ForcefullyEnded": false,
+            "StartMilage": 0,
+            "EndMilage": 52,
+            "_id": "e7bf96ab-a276-4ca1-ae28-3f791da149f6",
+            "_deleted": false
+        },
+        {
+            "MojioId": "31975502-1d7d-4360-9388-ba7fe2f7939d",
+            "VehicleId": "d0b9dc39-179f-4d70-830d-5fde0f1d4d7b",
+            "StartTime": "2014-04-05T03:36:56.321Z",
+            "LastUpdatedTime": "2014-04-05T03:37:31.983Z",
+            "EndTime": "2014-04-05T03:37:31.983Z",
+            "MaxSpeed": 115.19999999999999,
+            "MaxAcceleration": null,
+            "MaxDeceleration": null,
+            "MaxRPM": null,
+            "FuelLevel": 95.28,
+            "FuelEfficiency": 5.192,
+            "Distance": 52,
+            "MovingTime": null,
+            "IdleTime": null,
+            "StopTime": null,
+            "StartLocation": {
+                "Lat": 48.46612089313567,
+                "Lng": -123.43403594568372,
+                "FromLockedGPS": false,
+                "Dilution": 0,
+                "IsValid": true
+            },
+            "LastKnownLocation": null,
+            "EndLocation": {
+                "Lat": 48.46717734821141,
+                "Lng": -123.43720723874867,
+                "FromLockedGPS": false,
+                "Dilution": 0,
+                "IsValid": true
+            },
+            "StartAddress": {
+                "Address1": "1 Hospital Way",
+                "Address2": null,
+                "City": "Victoria",
+                "State": "BC",
+                "Zip": "V8Z 6R5",
+                "Country": "CA"
+            },
+            "LastKnownAddress": {
+                "Address1": "201-205 Watkiss Way",
+                "Address2": null,
+                "City": "Victoria",
+                "State": "BC",
+                "Zip": "V8Z 1R7",
+                "Country": "CA"
+            },
+            "EndAddress": {
+                "Address1": "201-205 Watkiss Way",
+                "Address2": null,
+                "City": "Victoria",
+                "State": "BC",
+                "Zip": "V8Z 1R7",
+                "Country": "CA"
+            },
+            "ForcefullyEnded": false,
+            "StartMilage": 0,
+            "EndMilage": 52,
+            "_id": "e8bca7b7-3957-4470-a58e-8e2b6cab5813",
+            "_deleted": false
+        }
+    ]
+}
