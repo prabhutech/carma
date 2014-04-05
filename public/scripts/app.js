@@ -5,11 +5,6 @@
             var i = 0;
 
             var promise = $http.get('../public/scripts/data.json');
-            //$scope.tripsData = promise.data;
-            // .then(function(res){
-            //     $scope.tripsData = angular.fromJson(res.data);
-            //     console.log($scope.tripsData);
-            // });
             promise.then(function(res){
                 $scope.tripsData = res.data
                 loop();
@@ -56,7 +51,7 @@
                     lineWidth: 5
                 }
             }, $scope.easypiechart2 = {
-                percent: $scope.currentEvent === undefined ? 0 : $scope.currentEvent.acceleration,
+                percent: 0,
                 options: {
                     animate: {
                         duration: 1e3,
@@ -68,7 +63,7 @@
                     lineWidth: 10
                 }
             }, $scope.easypiechart3 = {
-                percent: $scope.currentEvent === undefined ? 0 : $scope.currentEvent.acceleration,
+                percent: 0,
                 options: {
                     animate: {
                         duration: 1e3,
@@ -133,8 +128,8 @@
             }, $scope.gaugeChart3 = {
                 data: {
                     maxValue: 100,
-                    animationSpeed: 1,
-                    val: 30
+                    animationSpeed: 50,
+                    val: 0
                 },
                 options: {
                     lines: 12,
@@ -530,7 +525,20 @@ function() {
                 },
                 link: function(scope, ele) {
                     var data, gauge, options;
-                    return data = scope.data, options = scope.options, gauge = new Gauge(ele[0]).setOptions(options), gauge.maxValue = data.maxValue, gauge.animationSpeed = data.animationSpeed, gauge.set(data.val)
+                    data = scope.data;
+
+
+                     //data = scope.data;
+                    options = scope.options;
+                     gauge = new Gauge(ele[0]).setOptions(options);
+                      gauge.maxValue = data.maxValue;
+                       gauge.animationSpeed = data.animationSpeed;
+                       gauge.set(data.val);
+                    scope.$watch('data.val',function(newdata){
+                        gauge.set(newdata);
+                    });
+
+                     return;
                 }
             }
         }
