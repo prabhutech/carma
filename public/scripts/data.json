@@ -9,7 +9,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-2",
+        "user3": "-4",
+        "user4": "+2",
+        "user5": "-3"
    },
       {
         "treeLevel": 5,
@@ -22,7 +27,12 @@
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
         "state":"warning",
-        "audio": "audios/smb_vine.wav"
+        "audio": "audios/smb_vine.wav",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    },
       {
         "treeLevel": 5,
@@ -34,7 +44,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-4",
+        "user3": "+3",
+        "user4": "+1",
+        "user5": "-6"
    },   {
         "treeLevel": 5,
         "treesSaved": 2,
@@ -45,7 +60,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-2",
+        "user3": "-5",
+        "user4": "+3",
+        "user5": "-2"
    },   {
         "treeLevel": 11,
         "treesSaved": 2,
@@ -56,7 +76,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+6",
+        "user2": "-2",
+        "user3": "-3",
+        "user4": "+4",
+        "user5": "-2"
    },   {
         "treeLevel": 11,
         "treesSaved": 2,
@@ -67,7 +92,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-5",
+        "user3": "-2",
+        "user4": "+4",
+        "user5": "-2"
    }, {
         "treeLevel": 14,
         "treesSaved": 2,
@@ -78,7 +108,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "-2",
+        "user2": "+2",
+        "user3": "+3",
+        "user4": "-4",
+        "user5": "+3"
    }, {
         "treeLevel": 14,
         "treesSaved": 2,
@@ -89,7 +124,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 14,
         "treesSaved": 2,
@@ -100,7 +140,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-5",
+        "user3": "-2",
+        "user4": "+4",
+        "user5": "-2"
    }, {
         "treeLevel": 16,
         "treesSaved": 2,
@@ -111,7 +156,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 16,
         "treesSaved": 2,
@@ -122,7 +172,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 15,
         "treesSaved": 2,
@@ -133,7 +188,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-5",
+        "user3": "-2",
+        "user4": "+4",
+        "user5": "-2"
    }, {
         "treeLevel": 11,
         "treesSaved": 2,
@@ -144,7 +204,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 9,
         "treesSaved": 2,
@@ -155,7 +220,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 7,
         "treesSaved": 2,
@@ -166,7 +236,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "-2",
+        "user2": "+2",
+        "user3": "+3",
+        "user4": "-4",
+        "user5": "+3"
    }, {
         "treeLevel": 5,
         "treesSaved": 2,
@@ -177,7 +252,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 3,
         "treesSaved": 2,
@@ -188,7 +268,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 1,
         "treesSaved": 2,
@@ -199,7 +284,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 0,
         "treesSaved": 2,
@@ -210,7 +300,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+5",
+        "user2": "-2",
+        "user3": "-4",
+        "user4": "+1",
+        "user5": "-3"
    }, {
         "treeLevel": 3,
         "treesSaved": 2,
@@ -221,7 +316,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    }, {
         "treeLevel": 5,
         "treesSaved": 2,
@@ -232,7 +332,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+5",
+        "user2": "-2",
+        "user3": "-4",
+        "user4": "+1",
+        "user5": "-3"
    }, {
         "treeLevel": 6,
         "treesSaved": 2,
@@ -243,7 +348,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+5",
+        "user2": "-2",
+        "user3": "-3",
+        "user4": "+1",
+        "user5": "-1"
    }, {
         "treeLevel": 9,
         "treesSaved": 2,
@@ -254,7 +364,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-2",
+        "user4": "+1",
+        "user5": "-4"
    }, {
         "treeLevel": 12,
         "treesSaved": 2,
@@ -265,7 +380,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    },{
         "treeLevel": 13,
         "treesSaved": 2,
@@ -276,7 +396,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    },{
         "treeLevel": 14,
         "treesSaved": 2,
@@ -287,7 +412,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+3",
+        "user2": "-1",
+        "user3": "-5",
+        "user4": "+2",
+        "user5": "-1"
    },{
         "treeLevel": 15,
         "treesSaved": 2,
@@ -298,7 +428,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+5",
+        "user2": "-2",
+        "user3": "-4",
+        "user4": "+1",
+        "user5": "-5"
    },{
         "treeLevel": 16,
         "treesSaved": 2,
@@ -309,7 +444,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "-2",
+        "user3": "-3",
+        "user4": "+1",
+        "user5": "-4"
    },{
         "treeLevel": 17,
         "treesSaved": 2,
@@ -320,7 +460,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+5",
+        "user2": "-3",
+        "user3": "-1",
+        "user4": "+1",
+        "user5": "-4"
    },{
         "treeLevel": 18,
         "treesSaved": 2,
@@ -331,7 +476,12 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "+4",
+        "user3": "-2",
+        "user4": "+1",
+        "user5": "-2"
    },{
         "treeLevel": 19,
         "treesSaved": 2,
@@ -342,6 +492,11 @@
         "fuelEffeciency":10,
         "event":"hard-breaking",
         "icon": "hard-breaking-icon",
-        "state":"warning"
+        "state":"warning",
+        "user1": "+1",
+        "user2": "+2",
+        "user3": "-1",
+        "user4": "-4",
+        "user5": "+2"
    }
 ]

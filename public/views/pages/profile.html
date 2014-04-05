@@ -44,54 +44,58 @@
             </section>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="panel mini-box">
-                        <span class="box-icon bg-danger">
-                            <i class="fa fa-film"></i>
+                        <span class="box-icon bg-success">
+                            <i class="fa fa-leaf"></i>
                         </span>
                         <div class="box-info">
                             <p class="size-h2">39</p>
-                            <p class="text-muted">Amazing Films</p>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="col-sm-6">
-                    <div class="panel mini-box">
-                        <span class="box-icon bg-warning">
-                            <i class="fa fa-camera"></i>
-                        </span>
-                        <div class="box-info">
-                            <p class="size-h2">63</p>
-                            <p class="text-muted">Wonderful Photos</p>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="panel mini-box">
-                        <span class="box-icon bg-success">
-                            <i class="fa fa-bookmark-o"></i>
-                        </span>
-                        <div class="box-info">
-                            <p class="size-h2">55</p>
-                            <p class="text-muted">New Collections</p>
+                            <p class="text-muted">Trees Saved</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
+                    <div class="panel mini-box">
+                        <span class="box-icon bg-danger">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                        <div class="box-info">
+                            <p class="size-h2">55</p>
+                            <p class="text-muted">Total Carma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
                     <div class="panel mini-box">
                         <span class="box-icon bg-info">
                             <i class="fa fa-check"></i>
                         </span>
                         <div class="box-info">
                             <p class="size-h2">34</p>
-                            <p class="text-muted">Tasks Finised</p>
+                            <p class="text-muted">Fuel Effeciency</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-3" ng-mouseover='points=true' ng-mouseleave='points=false'
+                >
+                    <div class="panel mini-box">
+                        <span class="box-icon bg-primary">
+                            <i class="fa fa-globe" ng-hide="points"></i>
+                            <i class="fa fa-star" ng-show="points"></i>
+                        </span>
+                        <div class="box-info" >
+                            <p class="size-h2" ng-hide="points" >63</p>
+                            <p class="text-muted" ng-hide="points" >Carbon Points</p>
+                            <!-- <p class="size-h2" ng-show="points" >63</p> -->
+                            <p class="text-muted size-h2" ng-show="points" ><a href="https://www.hertz.com/rentacar/member/enrollment" target="_blank">Redeem</a></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          
+            <!-- end mini box -->
+
         </div>
     </div>
 

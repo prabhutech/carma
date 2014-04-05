@@ -5,7 +5,7 @@
         <div class="col-lg-3 col-sm-6">
             <section class="panel panel-box">
                 <div class="panel-left panel-item bg-success">
-                    <i class="fa fa-rocket text-large stat-icon"></i>
+                    <i class="glyphicon glyphicon-tree-deciduous" style="font-size: 5em"></i>
                 </div>
                 <div class="panel-right panel-item bg-reverse">
                     <p class="size-h1 no-margin">80<span class="size-h3"></span></p>
@@ -17,7 +17,7 @@
         <div class="col-lg-3 col-sm-6">
             <section class="panel panel-box">
                 <div class="panel-left panel-item bg-info">
-                    <i class="fa fa-users text-large stat-icon"></i>
+                    <i class="glyphicon glyphicon-globe" style="font-size: 5em"></i>
                 </div>
                 <div class="panel-right panel-item bg-reverse">
                     <p class="size-h1 no-margin">132</p>
@@ -41,7 +41,7 @@
         <div class="col-lg-3 col-sm-6">
             <section class="panel panel-box">
                 <div class="panel-left panel-item bg-danger">
-                    <i class="fa fa-shopping-cart text-large stat-icon"></i>
+                    <i class="glyphicon glyphicon-road" style="font-size: 5em"></i>
                 </div>
                 <div class="panel-right panel-item bg-reverse">
                     <p class="size-h1 no-margin">369</p>
@@ -107,46 +107,46 @@
         <div class="col-md-6" data-ng-controller="sparklineCtrl">
 
                 <div class="panel panel-default">
-                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Table"></span></strong></div>
+                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Top Customers"></span></strong></div>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Project</th>
-                                <th>Manager</th>
+                                <th>Customer ID</th>
+                                <th>Name</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>TWLT</td>
-                                <td>Amery Lee</td>
-                                <td><span class="label label-info">Pending</span></td>
+                                <td>ASID23</td>
+                                <td>Toby Smith</td>
+                                <td><blink><span class="label label-info" style="3em">{{currentEvent.user1}}</span></blink></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>A16Z</td>
-                                <td>Romayne Carlyn</td>
-                                <td><span class="label label-primary">Due</span></td>
+                                <td>Leo Perez</td>
+                                <td><blink><span class="label label-primary" style="3em">{{currentEvent.user2}}</span></blink></td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>Q300</td>
-                                <td>Marybeth Joanna</td>
-                                <td><span class="label label-success">Due</span></td>
+                                <td>Shavez Kalem</td>
+                                <td><blink><span class="label label-success" style="3em">{{currentEvent.user3}}</span></blink></td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>DARK</td>
-                                <td>Jonah Benny</td>
-                                <td><span class="label label-danger">Blocked</span></td>
+                                <td>Itabora Ferreira</td>
+                                <td><blink><span class="label label-danger" style="3em">{{currentEvent.user4}}</span></blink></td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>RVNG</td>
-                                <td>Daly Royle</td>
-                                <td><span class="label label-warning">Suspended</span></td>
+                                <td>Hung Vu</td>
+                                <td><blink><span class="label label-warning" style="3em">{{currentEvent.user5}}</span></blink></td>
                             </tr>
 
                         </tbody>
