@@ -8,7 +8,7 @@
                 <div class="panel-heading text-center bg-info">
                     <img alt="" src="images/g1.jpg" class="img-circle img80_80">
                     <h3>Jone Doe</h3>
-                    <p>Project Manager</p>                    
+                    <p>Project Manager</p>
                 </div>
                 <div class="list-justified-container">
                     <ul class="list-justified text-center">
@@ -66,7 +66,7 @@
                     <p class="size-h2">39</p>
                     <p class="text-muted">Trees Saved</p>
                 </div>
-            </div>                    
+            </div>
         </div>
         <div class="col-sm-3">
             <div class="panel mini-box">
@@ -77,7 +77,7 @@
                     <p class="size-h2">63</p>
                     <p class="text-muted">Carbon Points</p>
                 </div>
-            </div>                    
+            </div>
         </div>
         <div class="col-sm-3">
             <div class="panel mini-box">
@@ -109,7 +109,7 @@
             <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Gauge Chart</h3>
+                        <h3 class="panel-title">{{gaugeChart3.data}}</h3>
                     </div>
                     <div class="panel-body text-center">
                         <canvas data-gauge-chart
@@ -124,6 +124,20 @@
             <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
+                        <h3 class="panel-title">My Pie Chart</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="pieChart.options" percent="pieChart.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="pieChart.percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
                         <h3 class="panel-title">Easy Pie Chart</h3>
                     </div>
                     <div class="panel-body text-center">
@@ -131,7 +145,7 @@
                             <span class="pie-percent" ng-bind="easypiechart2.percent"></span>
                         </div>
                     </div>
-                </div>            
+                </div>
             </div>
 
             <div class="col-sm-4">

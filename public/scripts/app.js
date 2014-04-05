@@ -2,22 +2,49 @@
     "use strict";
     angular.module("app.chart.ctrls", []).controller("chartCtrl", ["$scope", "$http",
         function($scope, $http) {
-            $scope.currentEvent = 45;
             var i = 0;
-            $http.get('../public/scripts/data.json').then(function(res){
-                $scope.tripsData = angular.fromJson(res.data);
-                console.log($scope.tripsData);    
-                (function loop() {
-                    $scope.currentEvent = $scope.tripsData[i];
-                    console.log($scope.currentEvent);
-                    if (++i < $scope.tripsData.length) {
-                        setTimeout(loop, 1000);  // call myself in 3 seconds time if required
-                    }
-                })();      // above function expression is called immediately to start it off         
+
+            var promise = $http.get('../public/scripts/data.json');
+            //$scope.tripsData = promise.data;
+            // .then(function(res){
+            //     $scope.tripsData = angular.fromJson(res.data);
+            //     console.log($scope.tripsData);
+            // });
+            promise.then(function(res){
+                $scope.tripsData = res.data
+                loop();
             });
 
+
+            function loop() {
+                $scope.$apply(function(){
+                    $scope.easypiechart3.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*5);
+                    $scope.easypiechart2.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
+                    $scope.pieChart.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
+                    $scope.gaugeChart3.data.val = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
+                });
+
+
+                if (++i < $scope.tripsData.length) {
+                    setTimeout(loop, 1000);  // call myself in 3 seconds time if required
+                }
+            };      // above function expression is called immediately to start it off
+            $scope.pieChart = {
+                percent: 0,
+                options: {
+                    animate: {
+                        duration: 1e3,
+                        enabled: !0
+                    },
+                    barColor: "#674E9E",
+                    lineCap: "round",
+                    size: 180,
+                    lineWidth: 5
+                }
+            };
+
             return $scope.easypiechart = {
-                percent: $scope.currentEvent === undefined ? 0 : $scope.currentEvent.acceleration,
+                percent: 0,
                 options: {
                     animate: {
                         duration: 1e3,
@@ -105,9 +132,9 @@
                 }
             }, $scope.gaugeChart3 = {
                 data: {
-                    maxValue: 3e3,
-                    animationSpeed: 50,
-                    val: 1100
+                    maxValue: 100,
+                    animationSpeed: 1,
+                    val: 30
                 },
                 options: {
                     lines: 12,
@@ -1511,14 +1538,14 @@ function() {
             var i = 0;
             $http.get('../public/scripts/data.json').then(function(res){
                 $scope.tripsData = angular.fromJson(res.data);
-                console.log($scope.tripsData);    
+                console.log($scope.tripsData);
                 (function loop() {
                     $scope.currentEvent = $scope.tripsData[i];
                     console.log($scope.currentEvent);
                     if (++i < $scope.tripsData.length) {
                         setTimeout(loop, 1000);  // call myself in 3 seconds time if required
                     }
-                })();      // above function expression is called immediately to start it off         
+                })();      // above function expression is called immediately to start it off
             });
 
             return $scope.comboChartData = [
