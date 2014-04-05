@@ -14,7 +14,8 @@
         "user2": "-2",
         "user3": "-4",
         "user4": "+2",
-        "user5": "-3"
+        "user5": "-3",
+        "currentMPG": ""
    },
       {
         "treeLevel": 5,
