@@ -26,7 +26,10 @@
                 });
 
 
-                if (++i < $scope.tripsData.length) {
+                if (i <= $scope.tripsData.length) {
+                    console.log(i);
+                    i++;
+                    if(i === $scope.tripsData.length) {i = 0};
                     setTimeout(loop, 1000);  // call myself in 3 seconds time if required
                 }
             };      // above function expression is called immediately to start it off
@@ -1550,17 +1553,17 @@ function() {
         function($scope, $http, MojioService, $timeout) {
             $scope.Math = window.Math;
             var i = 0;
-            $http.get('../public/scripts/data.json').then(function(res){
-                $scope.tripsData = angular.fromJson(res.data);
-                console.log($scope.tripsData);
-                (function loop() {
-                    $scope.currentEvent = $scope.tripsData[i];
-                    console.log($scope.currentEvent);
-                    if (++i < $scope.tripsData.length) {
-                        setTimeout(loop, 1000);  // call myself in 3 seconds time if required
-                    }
-                })();      // above function expression is called immediately to start it off
-            });
+            // $http.get('../public/scripts/data.json').then(function(res){
+            //     $scope.tripsData = angular.fromJson(res.data);
+            //     console.log($scope.tripsData);
+            //     (function loop() {
+            //         $scope.currentEvent = $scope.tripsData[i];
+            //         console.log($scope.currentEvent);
+            //         if (++i < $scope.tripsData.length) {
+            //             setTimeout(loop, 1000);  // call myself in 3 seconds time if required
+            //         }
+            //     })();      // above function expression is called immediately to start it off
+            // });
 
             return $scope.comboChartData = [
                 ["Month", "Bolivia", "Ecuador", "Madagascar", "Papua New Guinea", "Rwanda", "Average"],
