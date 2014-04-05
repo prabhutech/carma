@@ -1193,7 +1193,7 @@ function() {
 }.call(this),
 function() {
     "use strict";
-    angular.module("app", ["ngRoute", "ngAnimate", "ui.bootstrap", "easypiechart", "mgo-angular-wizard", "app.ui.ctrls", "app.ui.services", "app.controllers", "app.directives", "app.form.validation", "app.ui.form.ctrls", "app.ui.form.directives", "app.tables", "app.task", "app.localization", "app.chart.ctrls", "app.chart.directives"]).config(["$routeProvider",
+    angular.module("app", ["ngRoute", "ngAnimate", "ui.bootstrap", "easypiechart", "mgo-angular-wizard", "app.ui.ctrls", "app.ui.services", "app.controllers", "app.directives", "app.form.validation", "app.ui.form.ctrls", "app.ui.form.directives", "app.tables", "app.task", "app.localization", "app.chart.ctrls", "app.chart.directives","app.services"]).config(["$routeProvider",
         function($routeProvider) {
             return $routeProvider.when("/", {
                 redirectTo: "/dashboard"
@@ -1509,4 +1509,12 @@ function() {
             ]
         }
     ])
+}.call(this),
+function () {
+    angular.module("app.controllers").controller("MojioCtrl",
+    function($scope,MojioService){
+        debugger;
+        MojioService.login('jakedsouza88@gmail.com','Admin!23');
+    });
 }.call(this);
+
