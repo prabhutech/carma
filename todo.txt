@@ -1,8 +1,8 @@
 #4F8A19
 
 User dashboard:
-- loop the array to go infinite
-- map the mobile data to match user daashboard
+- loop the array to go infinite - done
+- map the mobile data to match user daashboard 
 - need to bind the user profile to tree data
 - need to come up the base value for dashboard gaugges (verify)
 - something to fill up for graph on user dashboard
