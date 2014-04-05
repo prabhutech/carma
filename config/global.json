@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "carma"
+        }, 
+        "carma": {
+            "applicationId": "8rOdJZW6igZHUeDjdEtBYDVmQGvtJY6a2E2mi2Ic", 
+            "masterKey": "soPhIM7Ur5S1alzsnBUGIvKkfHraSGjJyUjAIQUg"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}
