@@ -12,7 +12,7 @@
 
             var promise2 = $http.get('scripts/trips.json');
                 promise2.then(function(res){
-                    debugger;
+                    //debugger;
                     $scope.averageTrips = res.data;
                     //loop();
             });
@@ -29,7 +29,9 @@
                 if (i <= $scope.tripsData.length) {
                     console.log(i);
                     i++;
-                    if(i === $scope.tripsData.length) {i = 0};
+                    if(i === $scope.tripsData.length) {
+                        i = 0;
+                    }
                     setTimeout(loop, 1000);  // call myself in 3 seconds time if required
                 }
             };      // above function expression is called immediately to start it off
@@ -1585,7 +1587,7 @@ function() {
 function () {
     angular.module("app.controllers").controller("MojioCtrl",
     function($scope,MojioService){
-        debugger;
+        //debugger;
         MojioService.userInfo = {username: 'jakedsouza88@gmail.com', password:'Admin!23'};
 
         MojioService.login('jakedsouza88@gmail.com','Admin!23').then(function(){

@@ -13,16 +13,12 @@
                 <div class="list-justified-container">
                     <ul class="list-justified text-center">
                         <li>
-                            <p class="size-h3">679</p>
-                            <p class="text-muted">Tweets</p>
+                            <p class="size-h3">{{currentEvent.carma}}</p>
+                            <p class="text-muted">Carma</p>
                         </li>
                         <li>
-                            <p class="size-h3">575</p>
-                            <p class="text-muted">Followers</p>
-                        </li>
-                        <li>
-                            <p class="size-h3">23</p>
-                            <p class="text-muted">Following</p>
+                            <p class="size-h3">{{currentEvent.treeLevel}}</p>
+                            <p class="text-muted">Tree Level</p>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +38,7 @@
                     <ul class="list-justified text-center">
                         <li>
                             <p class="size-h3">575</p>
-                            <p class="text-muted">Daily Page View</p>
+                            <p class="text-muted">Karma </p>
                         </li>
                         <li>
                             <p class="size-h3">23</p>
@@ -101,7 +97,7 @@
                     <p class="size-h2" ng-hide="points" >63</p>
                     <p class="text-muted" ng-hide="points" >Carbon Points</p>
                     <!-- <p class="size-h2" ng-show="points" >63</p> -->
-                    <p class="text-muted size-h2" ng-show="points" ><a href="https://www.hertz.com/rentacar/member/enrollment" target="_blank">Redeem</a></p>
+                    <p class="text-muted size-h2" ng-show="points" ><a  class="text-muted size-h2" href="https://www.hertz.com/rentacar/member/enrollment" target="_blank">Redeem</a></p>
                 </div>
             </div>
         </div>
@@ -111,48 +107,32 @@
 
     <section>
         <div class="row">
-            <div class="col-sm-4">
+            <!-- <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">{{gaugeChart3.data}}</h3>
+                        <h3 class="panel-title">Acceleration</h3>
                     </div>
                     <div class="panel-body text-center">
                         <canvas  data-gauge-chart
                                 data-data="gaugeChart3.data"
                                 data-options="gaugeChart3.options"
-                                style="width: 220px; height: 110px; "
+
                                 ></canvas>
                     </div>
                 </div>
-            </div>
-
-<!--             <div class="col-sm-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">My Pie Chart</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        <div easypiechart options="pieChart.options" percent="pieChart.percent" class="easypiechart">
-                            <span class="pie-percent" ng-bind="pieChart.percent"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-sm-4">
+            </div> -->
+<div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Easy Pie Chart</h3>
                     </div>
                     <div class="panel-body text-center">
-                        <div easypiechart options="easypiechart2.options" percent="easypiechart2.percent" class="easypiechart">
-                            <span class="pie-percent" ng-bind="easypiechart2.percent"></span>
+                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
                         </div>
                     </div>
                 </div>
-            </div> -->
-
+            </div>
             <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
