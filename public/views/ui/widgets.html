@@ -1,4 +1,4 @@
-<div class="page page-general" data-ng-controller="DashboardCtrl">
+<div class="page page-general">
 
     <div class="row">
         <div class="col-md-6">
@@ -6,7 +6,7 @@
             <!-- profile panel -->
             <div class="panel panel-profile">
                 <div class="panel-heading text-center bg-info">
-                    <img alt="" src="images/g1.jpg" class="img-circle img80_80">
+                    <img alt="" src="images/user.jpg" class="img-circle img80_80">
                     <h3>Jone Doe</h3>
                     <p>Project Manager</p>
                 </div>
@@ -60,7 +60,7 @@
         <div class="col-sm-3">
             <div class="panel mini-box">
                 <span class="box-icon bg-success">
-                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-leaf"></i>
                 </span>
                 <div class="box-info">
                     <p class="size-h2">39</p>
@@ -70,41 +70,46 @@
         </div>
         <div class="col-sm-3">
             <div class="panel mini-box">
-                <span class="box-icon bg-info">
-                    <i class="fa fa-globe"></i>
-                </span>
-                <div class="box-info">
-                    <p class="size-h2">63</p>
-                    <p class="text-muted">Carbon Points</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel mini-box">
-                <span class="box-icon bg-warning">
-                    <i class="fa fa-bookmark-o"></i>
+                <span class="box-icon bg-danger">
+                    <i class="fa fa-heart"></i>
                 </span>
                 <div class="box-info">
                     <p class="size-h2">55</p>
-                    <p class="text-muted">New Collections</p>
+                    <p class="text-muted">Total Carma</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="panel mini-box">
-                <span class="box-icon bg-primary">
+                <span class="box-icon bg-info">
                     <i class="fa fa-check"></i>
                 </span>
                 <div class="box-info">
                     <p class="size-h2">34</p>
-                    <p class="text-muted">Tasks Finised</p>
+                    <p class="text-muted">Fuel Effeciency</p>
                 </div>
             </div>
         </div>
+        <div class="col-sm-3" ng-mouseover='points=true' ng-mouseleave='points=false'
+        >
+            <div class="panel mini-box">
+                <span class="box-icon bg-info">
+                    <i class="fa fa-globe" ng-hide="points"></i>
+                    <i class="fa fa-star" ng-show="points"></i>
+                </span>
+                <div class="box-info" >
+                    <p class="size-h2" ng-hide="points" >63</p>
+                    <p class="text-muted" ng-hide="points" >Carbon Points</p>
+                    <!-- <p class="size-h2" ng-show="points" >63</p> -->
+                    <p class="text-muted size-h2" ng-show="points" ><a href="https://www.hertz.com/rentacar/member/enrollment" target="_blank">Redeem</a></p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- end mini box -->
 
-    <section data-ng-controller="chartCtrl">
+    <section>
         <div class="row">
             <div class="col-sm-4">
                 <div class="panel panel-default">
@@ -121,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4">
+<!--             <div class="col-sm-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">My Pie Chart</h3>
@@ -146,6 +151,19 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Easy Pie Chart</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-sm-4">
@@ -160,6 +178,8 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
 
     </section>

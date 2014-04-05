@@ -6,7 +6,7 @@
 
             var promise = $http.get('../public/scripts/data.json');
             promise.then(function(res){
-                $scope.tripsData = res.data
+                $scope.tripsData = res.data;
                 loop();
             });
 
