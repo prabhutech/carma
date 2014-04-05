@@ -8,8 +8,8 @@
                     <i class="fa fa-rocket text-large stat-icon"></i>
                 </div>
                 <div class="panel-right panel-item bg-reverse">
-                    <p class="size-h1 no-margin">80<span class="size-h3">%</span></p>
-                    <p class="text-muted no-margin"><span data-i18n="Growth"></span></p>
+                    <p class="size-h1 no-margin">80<span class="size-h3"></span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Total trees saved"></span></p>
                 </div>
             </section>
         </div>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="panel-right panel-item bg-reverse">
                     <p class="size-h1 no-margin">132</p>
-                    <p class="text-muted no-margin"><span data-i18n="New users"></span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Carbon Points"></span></p>
                 </div>
             </section>
         </div>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="panel-right panel-item bg-reverse">
                     <p class="size-h1 no-margin">3,760</p>
-                    <p class="text-muted no-margin"><span data-i18n="Profit"></span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Rewards given"></span></p>
                 </div>
             </section>
         </div>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="panel-right panel-item bg-reverse">
                     <p class="size-h1 no-margin">369</p>
-                    <p class="text-muted no-margin"><span data-i18n="Sales"></span></p>
+                    <p class="text-muted no-margin"><span data-i18n="Carmas currently live"></span></p>
                 </div>
             </section>
         </div>
@@ -53,9 +53,9 @@
     <!-- end stats -->
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <section class="panel panel-default">
-                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Data"></span></strong></div>
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="By Car Type"></span></strong></div>
                 <div class="panel-body" data-ng-controller="morrisChartCtrl">
                     <div morris-chart
                          data-data="mainData"
@@ -71,10 +71,10 @@
                 </div>
             </section> 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
 
             <section class="panel panel-default">
-                <div class="panel-heading"> <strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Realtime Data"></span></strong> </div>
+                <div class="panel-heading"> <strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="By Location"></span></strong> </div>
                 <div class="panel-body" data-ng-controller="flotChartCtrl.realtime">
                     <div data-flot-chart-realtime
                          data-type="realtime"
@@ -87,28 +87,24 @@
     </div>
 
 
-    <section>
-        <div class="row">
-            <div class="col-md-6">
-
-                <section class="panel panel-box">
-                    <div class="panel-left panel-item bg-warning">
-                        <i class="fa fa-sun-o text-huge"></i>
-                    </div>
-                    <div class="panel-right panel-item bg-reverse">
-                        <p class="size-h1">66º</p>
-                        <p class="text-muted">Sunny Day</p>
-                    </div>
-                </section>
-                <section class="panel panel-box">
-                    <div class="panel-left panel-item bg-reverse">
-                        <p class="size-h1">56</p>
-                        <p class="text-muted">Gifts Received</p>
-                    </div>
-                    <div class="panel-right panel-item bg-success">
-                        <i class="fa fa-heart text-huge"></i>
-                    </div>
-                </section>
+    <div class="row">
+        <div class="col-md-6">
+            <section class="panel panel-default" data-ng-controller="morrisChartCtrl">
+                <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Area Chart</div>
+                <div class="panel-body">
+                    <div morris-chart
+                         data-data="simpleData"
+                         data-type="area"
+                         data-xkey="year"
+                         data-ykeys='["value"]'
+                         data-labels='["Value A"]'
+                         data-line-colors='["#674E9E"]'
+                         data-line-width="2"
+                         ></div>
+                </div>
+            </section>  
+        </div>
+        <div class="col-md-6" data-ng-controller="sparklineCtrl">
 
                 <div class="panel panel-default">
                     <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Table"></span></strong></div>
@@ -155,74 +151,11 @@
 
                         </tbody>
                     </table>
-                </div>
-
-            </div>
-            <div class="col-md-6">
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <section class="panel panel-box">
-                            <div class="panel-top bg-facebook">
-                                <div class="divider divider"></div>
-                                <i class="fa fa-facebook size-h1"></i>
-                                <div class="divider divider"></div>
-                            </div>
-                            <div class="list-justified-container">
-                                <ul class="list-justified text-center">
-                                    <li>
-                                        <p class="size-h3">575</p>
-                                        <p class="text-muted">Followers</p>
-                                    </li>
-                                    <li>
-                                        <p class="size-h3">23</p>
-                                        <p class="text-muted">Following</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="col-sm-6">
-                        <section class="panel panel-box">
-                            <div class="panel-top bg-twitter">
-                                <div class="divider divider"></div>
-                                <i class="fa fa-twitter size-h1"></i>
-                                <div class="divider divider"></div>
-                            </div>
-                            <div class="list-justified-container">
-                                <ul class="list-justified text-center">
-                                    <li>
-                                        <p class="size-h3">1345</p>
-                                        <p class="text-muted">Followers</p>
-                                    </li>
-                                    <li>
-                                        <p class="size-h3">42</p>
-                                        <p class="text-muted">Following</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>                        
-                    </div>
-                </div>
-
-                <section class="panel panel-default">
-                    <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> <span data-i18n="Progress"></span></strong></div>
-                    <div class="panel-body" data-ng-controller="ProgressDemoCtrl">
-                        <p>Tasks</p>
-                        <progressbar class="progressbar-xs" value="55"></progressbar>
-                        <p>Messages</p>
-                        <progressbar class="progressbar-xs" value="43" type="success"></progressbar>
-                        <p>Notifications</p>
-                        <progressbar class="progressbar-xs" value="68" type="info"></progressbar>
-                        <p>Mails</p>
-                        <progressbar class="progressbar-xs" value="86" type="warning"></progressbar>
-                        <p>Bugs</p>
-                        <progressbar class="progressbar-xs" value="77" type="danger"></progressbar>
-                    </div>
-                </section>     
-            </div>
+                </div> 
         </div>
-    </section>
+    </div>
+
+
 
 </div>
   
