@@ -15,25 +15,52 @@ angular.module('app.services',[])
     var SECRETKEY = '521112b0-8ecc-4a8d-8403-1a0bea242186';
 
     var loginInfo = {} ;
-
+    var userInfo = {};
+    var loggedIn = false;
     var login = function (username,password) {
-        $http.post(SANDBOX_URL+'login/'+APPID+'?secretKey='+SECRETKEY+'&userOrEmail='+username+'&password='+password).then(function(res){
+        userInfo = {username:username,password:password};
+
+       var promise =  $http.post(SANDBOX_URL+'login/'+APPID+'?secretKey='+SECRETKEY+'&userOrEmail='+username+'&password='+password)
+
+       promise.then(function(res){
             loginInfo = res.data ;
+            loggedIn = true ;
             console.log('logged in successfully with result :' + angular.toJson(res.data,true) );
         }, function(res){
             console.log('ERROR logging in :' +angular.toJson(res.data,true) );
         });
-        console.log('login moji complete');
+       console.log('login moji called');
+       return promise;
+
     };
 
     var logout = function () {
         console.log('logout mojio');
     };
 
+    // http://sandbox.api.moj.io/v1/trips
+    var getTrips = function () {
+        if(!loggedIn){
+            login(userInfo.username,userInfo.password).then(function(){
+                getTrips();
+            });
+        }else {
+            $http.get(SANDBOX_URL+'/trips',{
+                headers:{
+                    MojioAPIToken:loginInfo._id
+                }
+            }).then(function(res){
+                console.log('trips'+ angular.toJson(res.data,true));
+            });
+        }
+    };
+
     return {
+        userInfo:userInfo,
         login : login,
         logout: logout,
-        loginInfo: loginInfo
+        loginInfo: loginInfo,
+        getTrips: getTrips
     };
 
 
