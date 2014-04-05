@@ -4,7 +4,7 @@
         function($scope, $http) {
             var i = 0;
 
-            var promise = $http.get('../public/scripts/data.json');
+            var promise = $http.get('scripts/data.json');
             promise.then(function(res){
                 $scope.tripsData = res.data;
                 loop();
@@ -17,6 +17,7 @@
                     $scope.easypiechart2.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
                     $scope.pieChart.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
                     $scope.gaugeChart3.data.val = Math.round($scope.tripsData[i].acceleration * Math.random()*4);
+                    $scope.currentEvent  = $scope.tripsData[i];
                 });
 
 
