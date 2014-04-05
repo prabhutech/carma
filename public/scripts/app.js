@@ -10,7 +10,12 @@
                 loop();
             });
 
-
+            var promise2 = $http.get('scripts/trips.json');
+                promise2.then(function(res){
+                    debugger;
+                    $scope.averageTrips = res.data;
+                    //loop();
+            });
             function loop() {
                 $scope.$apply(function(){
                     $scope.easypiechart3.percent = Math.round($scope.tripsData[i].acceleration * Math.random()*5);

@@ -93,7 +93,7 @@
         <div class="col-sm-3" ng-mouseover='points=true' ng-mouseleave='points=false'
         >
             <div class="panel mini-box">
-                <span class="box-icon bg-info">
+                <span class="box-icon bg-primary">
                     <i class="fa fa-globe" ng-hide="points"></i>
                     <i class="fa fa-star" ng-show="points"></i>
                 </span>
@@ -196,16 +196,18 @@
                             <th>Distance</th>
                             <th>Max Speed</th>
                             <th>Fuel Efficiency</th>
-                            <th>Overall rating</th>
+                            <th>Trip Carma</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="trip in tripsData.Data">
+                        <tr ng-repeat="trip in averageTrips">
                             <td>{{$index+1}}</td>
-                            <td>{{trip.Distance}}</td>
-                            <td>{{Math.round(trip.MaxSpeed)}}</td>
-                            <td><span class="label label-info">{{trip.FuelEfficiency}}</span></td>
-                            <td><progressbar class="progressbar-xs" value="55"></progressbar>
+                            <td>{{trip.distance}} mi</td>
+                            <td>{{trip.maxSpeed}} mph</td>
+                            <td><span class="label label-info">{{trip.fuelEfficiency}} mpg</span></td>
+                            <td>
+                                <progressbar class="progressbar-xs" type='success' value="trip.rating"></progressbar>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

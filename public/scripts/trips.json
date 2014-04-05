@@ -1,0 +1,33 @@
+[
+    {
+    "distance": 50,
+    "maxSpeed": 80,
+    "fuelEfficiency": 25,
+    "rating":33
+    },
+    {
+    "distance": 500,
+    "maxSpeed": 94,
+    "fuelEfficiency": 40,
+    "rating":55
+    },
+    {
+    "distance": 13,
+    "maxSpeed": 30,
+    "fuelEfficiency": 15,
+    "rating":23
+    },
+    {
+    "distance": 16,
+    "maxSpeed": 70,
+    "fuelEfficiency": 37,
+    "rating":80
+    },
+    {
+    "distance": 40,
+    "maxSpeed": 76,
+    "fuelEfficiency": 34,
+    "rating":87
+    }
+
+]
