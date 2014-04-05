@@ -1514,7 +1514,12 @@ function () {
     angular.module("app.controllers").controller("MojioCtrl",
     function($scope,MojioService){
         debugger;
-        MojioService.login('jakedsouza88@gmail.com','Admin!23');
+        MojioService.userInfo = {username: 'jakedsouza88@gmail.com', password:'Admin!23'};
+
+        MojioService.login('jakedsouza88@gmail.com','Admin!23').then(function(){
+        MojioService.getTrips();
+        });
+
     });
 }.call(this);
 
