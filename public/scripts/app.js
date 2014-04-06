@@ -183,49 +183,49 @@
         function($scope) {
             return $scope.mainData = [{
                 month: "2013-01",
-                xbox: 294e3,
-                will: 136e3,
-                playstation: 244e3
+                Ford: 294e3,
+                Honda: 136e3,
+                Toyota: 244e3
             }, {
                 month: "2013-02",
-                xbox: 228e3,
-                will: 335e3,
-                playstation: 127e3
+                Ford: 228e3,
+                Honda: 335e3,
+                Toyota: 127e3
             }, {
                 month: "2013-03",
-                xbox: 199e3,
-                will: 159e3,
-                playstation: 13e4
+                Ford: 199e3,
+                Honda: 159e3,
+                Toyota: 13e4
             }, {
                 month: "2013-04",
-                xbox: 174e3,
-                will: 16e4,
-                playstation: 82e3
+                Ford: 174e3,
+                Honda: 16e4,
+                Toyota: 82e3
             }, {
                 month: "2013-05",
-                xbox: 255e3,
-                will: 318e3,
-                playstation: 82e3
+                Ford: 255e3,
+                Honda: 318e3,
+                Toyota: 82e3
             }, {
                 month: "2013-06",
-                xbox: 298400,
-                will: 401800,
-                playstation: 98600
+                Ford: 298400,
+                Honda: 401800,
+                Toyota: 98600
             }, {
                 month: "2013-07",
-                xbox: 37e4,
-                will: 225e3,
-                playstation: 159e3
+                Ford: 37e4,
+                Honda: 225e3,
+                Toyota: 159e3
             }, {
                 month: "2013-08",
-                xbox: 376700,
-                will: 303600,
-                playstation: 13e4
+                Ford: 376700,
+                Honda: 303600,
+                Toyota: 13e4
             }, {
                 month: "2013-09",
-                xbox: 527800,
-                will: 301e3,
-                playstation: 119400
+                Ford: 527800,
+                Honda: 301e3,
+                Toyota: 119400
             }], $scope.simpleData = [{
                 year: "2008",
                 value: 20
