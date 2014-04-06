@@ -10,15 +10,15 @@
                     <source src="audios/smb_vine.wav" type="audio/wav" />
                 </audio>
 
-                <div class="list-justified-container">
+                <div class="list-justified-container" style="padding: 0px">
                     <ul class="list-justified text-center">
                         <li>
-                            <p class="size-h3">679</p>
+                            <p class="size-h3">{{currentEvent.carma}}</p>
                             <p class="text-muted">Carma</p>
                         </li>
                         <li>
-                            <p class="size-h3">575</p>
-                            <p class="text-muted">Fuel Effeciency</p>
+                            <p class="size-h3" ng-bind="currentEvent.currentMPG"></p>
+                            <p class="text-muted">MPG</p>
                         </li>
 <!--                         <li>
                             <p class="size-h3">23</p>
@@ -45,7 +45,7 @@
  -->
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box" style="min-height:80px">
                         <span class="box-icon bg-success">
                             <i class="fa fa-leaf"></i>
                         </span>

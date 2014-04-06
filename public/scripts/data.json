@@ -3,7 +3,7 @@
         "treeLevel": 0,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 625,
         "acceleration":12,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -15,13 +15,13 @@
         "user3": "-4",
         "user4": "+2",
         "user5": "-3",
-        "currentMPG": ""
+        "currentMPG": "20"
    },
       {
         "treeLevel": 5,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 1,
+        "carma": 627,
         "acceleration":19,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -33,13 +33,14 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "21"
    },
       {
         "treeLevel": 5,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 2,
+        "carma": 635,
         "acceleration":30,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -50,12 +51,13 @@
         "user2": "-4",
         "user3": "+3",
         "user4": "+1",
-        "user5": "-6"
+        "user5": "-6",
+        "currentMPG": "22"
    },   {
         "treeLevel": 5,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 3,
+        "carma": 650,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -66,12 +68,13 @@
         "user2": "-2",
         "user3": "-5",
         "user4": "+3",
-        "user5": "-2"
+        "user5": "-2",
+        "currentMPG": "23"
    },   {
         "treeLevel": 11,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 4,
+        "carma": 670,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -82,12 +85,13 @@
         "user2": "-2",
         "user3": "-3",
         "user4": "+4",
-        "user5": "-2"
+        "user5": "-2",
+        "currentMPG": "30"
    },   {
         "treeLevel": 11,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 5,
+        "carma": 679,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -98,12 +102,13 @@
         "user2": "-5",
         "user3": "-2",
         "user4": "+4",
-        "user5": "-2"
+        "user5": "-2",
+        "currentMPG": "45"
    }, {
         "treeLevel": 14,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 680,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -114,12 +119,13 @@
         "user2": "+2",
         "user3": "+3",
         "user4": "-4",
-        "user5": "+3"
+        "user5": "+3",
+        "currentMPG": "52"
    }, {
         "treeLevel": 14,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 687,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -130,12 +136,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "53"
    }, {
         "treeLevel": 14,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 690,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -146,12 +153,13 @@
         "user2": "-5",
         "user3": "-2",
         "user4": "+4",
-        "user5": "-2"
+        "user5": "-2",
+        "currentMPG": "54"
    }, {
         "treeLevel": 16,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 692,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -162,12 +170,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "62"
    }, {
         "treeLevel": 16,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 695,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -178,12 +187,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "65"
    }, {
         "treeLevel": 15,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 697,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -194,12 +204,13 @@
         "user2": "-5",
         "user3": "-2",
         "user4": "+4",
-        "user5": "-2"
+        "user5": "-2",
+        "currentMPG": "63"
    }, {
         "treeLevel": 11,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 698,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -210,12 +221,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "60"
    }, {
         "treeLevel": 9,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 701,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -226,12 +238,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "45"
    }, {
         "treeLevel": 7,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 705,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -242,12 +255,13 @@
         "user2": "+2",
         "user3": "+3",
         "user4": "-4",
-        "user5": "+3"
+        "user5": "+3",
+        "currentMPG": "40"
    }, {
         "treeLevel": 5,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 708,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -258,12 +272,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "41"
    }, {
         "treeLevel": 3,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 710,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -274,12 +289,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "21"
    }, {
         "treeLevel": 1,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 725,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -290,12 +306,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "10"
    }, {
         "treeLevel": 0,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 730,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -306,12 +323,13 @@
         "user2": "-2",
         "user3": "-4",
         "user4": "+1",
-        "user5": "-3"
+        "user5": "-3",
+        "currentMPG": "10"
    }, {
         "treeLevel": 3,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 741,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -322,12 +340,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "13"
    }, {
         "treeLevel": 5,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 742,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -338,12 +357,13 @@
         "user2": "-2",
         "user3": "-4",
         "user4": "+1",
-        "user5": "-3"
+        "user5": "-3",
+        "currentMPG": "21"
    }, {
         "treeLevel": 6,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 743,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -354,12 +374,13 @@
         "user2": "-2",
         "user3": "-3",
         "user4": "+1",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "21"
    }, {
         "treeLevel": 9,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 752,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -370,12 +391,13 @@
         "user2": "-1",
         "user3": "-2",
         "user4": "+1",
-        "user5": "-4"
+        "user5": "-4",
+        "currentMPG": "21"
    }, {
         "treeLevel": 12,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 761,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -386,12 +408,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "23"
    },{
         "treeLevel": 13,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 763,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -402,12 +425,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "36"
    },{
         "treeLevel": 14,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 765,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -418,12 +442,13 @@
         "user2": "-1",
         "user3": "-5",
         "user4": "+2",
-        "user5": "-1"
+        "user5": "-1",
+        "currentMPG": "45"
    },{
         "treeLevel": 15,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 766,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -434,12 +459,13 @@
         "user2": "-2",
         "user3": "-4",
         "user4": "+1",
-        "user5": "-5"
+        "user5": "-5",
+        "currentMPG": "51"
    },{
         "treeLevel": 16,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 768,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -450,12 +476,13 @@
         "user2": "-2",
         "user3": "-3",
         "user4": "+1",
-        "user5": "-4"
+        "user5": "-4",
+        "currentMPG": "56"
    },{
         "treeLevel": 17,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 771,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -466,12 +493,13 @@
         "user2": "-3",
         "user3": "-1",
         "user4": "+1",
-        "user5": "-4"
+        "user5": "-4",
+        "currentMPG": "61"
    },{
         "treeLevel": 18,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 775,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -482,12 +510,13 @@
         "user2": "+4",
         "user3": "-2",
         "user4": "+1",
-        "user5": "-2"
+        "user5": "-2",
+        "currentMPG": "66"
    },{
         "treeLevel": 19,
         "treesSaved": 2,
         "totalKarma": 21,
-        "carma": 0,
+        "carma": 779,
         "acceleration":10,
         "maxSpeed":10,
         "fuelEffeciency":10,
@@ -498,6 +527,7 @@
         "user2": "+2",
         "user3": "-1",
         "user4": "-4",
-        "user5": "+2"
+        "user5": "+2",
+        "currentMPG": "70"
    }
 ]
